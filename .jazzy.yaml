@@ -1,0 +1,11 @@
+author: Arya Praneil Pritesh
+author_url: https://www.aryapraneil.com
+clean: true
+copyright: Copyright (c) 2023 Arya Praneil Pritesh
+github_file_prefix: https://github.com/enginestein/Baker/blob/master
+github_url: https://github.com/enginestein/Baker
+module: Baker
+root_url: https://github.com/enginestein/Baker
+sourcekitten_sourcefile:
+  - docs/Baker.json
+theme: fullwidth
