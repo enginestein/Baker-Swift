@@ -7,9 +7,9 @@ library_name=$(echo $repo_name | perl -pe 's/(^|-|_| |%20)(\w)/uc($2)/ge' )
 author_name=$(git config user.name)
 author_email=$(git config user.email)
 
-for path in $(find . -type d -path "*LIBRARY-NAME*")
+for path in $(find . -type d -path "*Baker*")
 do
-  mv $path ${path//LIBRARY-NAME/$library_name}
+  mv $path ${path//Baker/$library_name}
 done
 
 for path in $(find . -type f ! -path "./.*/*" ! -name "./generate.sh" ! -name ".DS_Store")
@@ -17,10 +17,10 @@ do
   sed -i "" -e "s/AUTHOR-HANDLE/$author_handle/g" $path
   sed -i "" -e "s/AUTHOR-NAME/$author_name/g" $path
   sed -i "" -e "s/AUTHOR-EMAIL/$author_email/g" $path
-  sed -i "" -e "s/LIBRARY-NAME/$library_name/g" $path
-  if [[ $path =~ "LIBRARY-NAME" ]]
+  sed -i "" -e "s/Baker/$library_name/g" $path
+  if [[ $path =~ "Baker" ]]
   then
-    mv $path ${path//LIBRARY-NAME/$library_name}
+    mv $path ${path//Baker/$library_name}
   fi
 done
 

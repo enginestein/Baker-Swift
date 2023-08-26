@@ -1,6 +1,6 @@
-import LIBRARY-NAMETests
+import BakerTests
 import XCTest
 
 var tests = [XCTestCaseEntry]()
-tests += LIBRARY-NAMETests.allTests()
+tests += BakerTests.allTests()
 XCTMain(tests)

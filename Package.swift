@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "LIBRARY-NAME",
+    name: "Baker",
     platforms: [
         .iOS(.v13),
         .macOS(.v10_15),
@@ -12,13 +12,13 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "LIBRARY-NAME",
-            targets: ["LIBRARY-NAME"]
+            name: "Baker",
+            targets: ["Baker"]
         ),
         .library(
-            name: "LIBRARY-NAMEDynamic",
+            name: "BakerDynamic",
             type: .dynamic,
-            targets: ["LIBRARY-NAME"]
+            targets: ["Baker"]
         )
     ],
     dependencies: [
@@ -26,12 +26,12 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "LIBRARY-NAME",
+            name: "Baker",
             dependencies: []
         ),
         .testTarget(
-            name: "LIBRARY-NAMETests",
-            dependencies: ["LIBRARY-NAME"]
+            name: "BakerTests",
+            dependencies: ["Baker"]
         )
     ]
 )

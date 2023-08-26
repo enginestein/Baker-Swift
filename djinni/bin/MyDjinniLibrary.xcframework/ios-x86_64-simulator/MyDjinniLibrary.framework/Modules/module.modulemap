@@ -1,0 +1,6 @@
+framework module MyDjinniLibrary {
+  umbrella header "MyDjinniLibrary.h"
+
+  export *
+  module * { export * }
+}
