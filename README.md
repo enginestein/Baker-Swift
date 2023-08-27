@@ -5,7 +5,7 @@
 # Usage
 
 ## Initial Tasks
-
+ 
 Using Baker is very easy, all you have to do is to create a YAML, JSON or XML file first. However, files should have been defined in a specific format:
 
 **For XML files**
